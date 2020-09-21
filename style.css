@@ -1,0 +1,285 @@
+/*ALL ELEMENTS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background: url(./Back\ -\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*----------------------*/
+/*Rules Section*/
+
+#rules-header {
+    font-size: 35px;
+}
+
+#rules-box {
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+
+    list-style-position: inside;
+
+}
+
+#rules-number{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+
+/*----------------------------*/
+/*Next Buttons*/
+.next-btn {
+    padding: 5px 13px;
+    margin: 13px 0px 13px 0px;
+    float: right;
+
+
+    font-size: 20px;
+    font-family: 'Mukta', sans-serif;
+    color:white;
+    background-color: rgb(143, 0, 0);
+    border:2px solid black;
+    border-radius: 10px;
+}
+
+.next-btn:hover {
+    padding: 7px 18px;
+    font-size: 27;
+    font-weight: 600;
+    background-color: rgb(36, 36, 36);
+    background-color: rgb(179, 0, 0);
+    transition: .3s ease-in;
+}
+
+.display {
+    display: none;
+}
+
+/*-------------------------------*/
+/*Same styles of rules and player names*/
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 530px;
+    width: 800px;
+    padding: 30px 100px;
+    margin:auto;
+
+    background-color: rgba(255, 255, 255, 0.932);
+    border: 3px solid black;
+    box-shadow: 0px 10px 50px rgba(109, 109, 109, 0.938);
+    border-radius: 6px;
+}
+
+.sub-box {
+    height: 380px;
+    padding: 30px 2px;
+
+    border: 2px solid black;
+    border-radius: 14px;
+
+    background-color: rgb(192, 189, 189);
+}
+
+/*-------------------------------*/
+/*Player Names*/
+
+#names-inp-box {
+    text-align: center;
+}
+
+#sub-box-header {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#name-0-inp {
+    margin: 40px 0px 20px 0px;
+    padding: 5px 7px;
+
+    font-size: 23px;
+    border-radius: 13px;
+    text-align: center;
+}
+
+#name-1-inp {
+    margin: 60px 0px 10px 0px;
+    padding: 5px 7px;
+
+    font-size: 23px;
+    border-radius: 13px;
+    text-align: center;
+}
+
+.name-inp-svg {
+    font-size: 30px;
+}
+
+.name-inputs:hover {
+    font-weight: 500;
+    background: #114357;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #F29492, #114357);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #F29492, #114357); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: whitesmoke;
+    transition: .5s ease-in;
+}
+
+#name-not-given {
+    color: red;
+    font-weight: 600;
+}
+
+/*******************************/
+/*PLAYER PANELS*/
+
+#player-panel-container {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.player-panels {
+    width: 540px;
+    height: 630px;
+
+    background-color: rgb(177, 177, 177);
+}
+
+.player-names {
+    margin: 30px 0px 30px 0px;
+
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 45px;
+}
+
+.active {
+    background-color: rgb(255, 255, 255);
+}
+
+.winner {
+    color: red;
+}
+
+.name {
+    display: inline-block;
+}
+
+.active-svg-0, .active-svg-1 {
+    margin-bottom: 4px;
+}
+
+/***************************/
+/*PLAYER SCORES*/
+.global-scores {
+    margin: 60px 0px 20px 0px;
+    padding-top: 20px;
+
+    text-align: center;
+    color: rgb(38, 93, 211);
+    font-size: 90px;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: -2px;
+}
+
+.current-score-container {
+    width: 140px;
+    height: 80px;
+    font-size: 20px;
+    margin-top: 100px;
+    margin-left: 200px;
+
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+
+.current-scores {
+    padding-top: 5px;
+    font-size: 25px;
+}
+
+/****************************/
+/*BUTTONS*/
+
+.buttons {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 23px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.buttons:hover {
+    font-weight: 600;
+}
+
+#new-game-btn {
+    top: 50px;
+}
+#roll-dice-btn {
+    top: 430px;
+}
+#hold-dice-btn {
+    top: 480px;
+}
+
+#win-points {
+    position: absolute;
+    top: 580px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:black;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/*****************************/
+/*DICE IMAGES*/
+.dice-imgs {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    box-shadow: 2px 20px 50px rgb(97, 97, 97);
+
+}
+
+#dice-img-0 {
+    top: 140px;
+}
+
+#dice-img-1 {
+    top: 265px;
+}
